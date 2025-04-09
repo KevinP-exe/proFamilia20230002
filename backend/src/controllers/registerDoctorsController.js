@@ -25,7 +25,7 @@ registerDoctorsController.register = async (req, res) => {
       email,
       password: passwordHash
     });
- 
+    
     await newDoctor.save();
  
     // Firmar token
